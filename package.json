@@ -1,5 +1,6 @@
 {
   "name": "todolist",
+  "homepage": "https://Nechestno.github.io/mindbox-todolist",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,10 +9,13 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "antd": "^5.25.4",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "styled-components": "^6.1.18"
